@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=ncspot
+GenericName=Music Player
+Comment=Spotify in the terminal
+Exec=kitty --class ncspot -e ncspot
+Icon=audio-x-generic
+Categories=Audio;Music;Player;
+Keywords=spotify;music;

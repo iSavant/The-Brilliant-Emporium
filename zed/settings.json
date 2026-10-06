@@ -1,0 +1,46 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "agent": {
+    "default_model": {
+      "provider": "ollama",
+      "model": "llama3.1:8b",
+      "enable_thinking": false
+    },
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "cli_default_open_behavior": "existing_window",
+  "accessible_mode": true,
+  "proxy": "",
+  "disable_ai": false,
+  "status_bar": {
+    "show_active_file": true,
+    "line_endings_button": true,
+    "cursor_position_button": true,
+    "active_encoding_button": "enabled"
+  },
+  "project_panel": {
+    "button": true
+  },
+  "helix_mode": false,
+  "vim_mode": false,
+  "ui_font_family": "Roboto Mono",
+  "buffer_font_family": "IosevkaTerm Nerd Font Mono",
+  "edit_predictions": {
+    "provider": "zed"
+  },
+  "terminal": {
+    "font_family": "IosevkaTerm Nerd Font Mono"
+  },
+  "icon_theme": "Zed (Default)",
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": "Shadow Slave",
+}

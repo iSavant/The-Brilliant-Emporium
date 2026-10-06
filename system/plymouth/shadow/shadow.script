@@ -1,0 +1,87 @@
+Window.SetBackgroundTopColor(0.024, 0.027, 0.031);
+Window.SetBackgroundBottomColor(0.024, 0.027, 0.031);
+
+cx = Window.GetX() + Window.GetWidth() / 2;
+cy = Window.GetY() + Window.GetHeight() / 2;
+
+for (i = 0; i <= 18; i++)
+    ring[i] = Image("ring" + i + ".png");
+
+sigil = Sprite(ring[0]);
+sigil.SetX(cx - ring[0].GetWidth() / 2);
+sigil.SetY(cy - ring[0].GetHeight() / 2 - 80);
+sigil.SetOpacity(0);
+
+box = Image("box.png");
+fill = Image("boxfill.png");
+for (i = 0; i < 24; i++)
+    rune[i] = Image("rune" + i + ".png");
+
+for (i = 0; i < 32; i++) {
+    cell[i] = Sprite(box);
+    cell[i].SetOpacity(0);
+    glyph[i] = Sprite(rune[0]);
+    glyph[i].SetOpacity(0);
+}
+
+whisperImage = Image("whisper.png");
+whisper = Sprite(whisperImage);
+whisper.SetX(cx - whisperImage.GetWidth() / 2);
+whisper.SetY(cy + 230);
+whisper.SetOpacity(0);
+
+t = 0;
+
+fun refresh_callback() {
+    t++;
+    fade = t / 25;
+    if (fade > 1) fade = 1;
+    sigil.SetOpacity(fade);
+    n = Math.Int((t - 10) / 3);
+    if (n < 0) n = 0;
+    if (n > 18) n = 18;
+    sigil.SetImage(ring[n]);
+}
+Plymouth.SetRefreshFunction(refresh_callback);
+
+fun display_password_callback(prompt, bullets) {
+    shown = bullets + 1;
+    if (shown < 12) shown = 12;
+    if (shown > 32) shown = 32;
+    gap = 40;
+    x0 = cx - (shown * gap - 12) / 2;
+    y = cy + 150;
+    for (i = 0; i < 32; i++) {
+        if (i < shown) {
+            if (i < bullets) {
+                cell[i].SetImage(fill);
+                cell[i].SetX(x0 + i * gap - 8);
+                cell[i].SetY(y - 8);
+                glyph[i].SetImage(rune[(i * 7) % 24]);
+                glyph[i].SetX(x0 + i * gap - 4);
+                glyph[i].SetY(y - 52);
+                glyph[i].SetOpacity(1);
+            } else {
+                cell[i].SetImage(box);
+                cell[i].SetX(x0 + i * gap);
+                cell[i].SetY(y);
+                glyph[i].SetOpacity(0);
+            }
+            cell[i].SetOpacity(1);
+        } else {
+            cell[i].SetOpacity(0);
+            glyph[i].SetOpacity(0);
+        }
+    }
+    whisper.SetOpacity(1);
+}
+Plymouth.SetDisplayPasswordFunction(display_password_callback);
+
+fun display_normal_callback() {
+    for (i = 0; i < 32; i++) {
+        cell[i].SetOpacity(0);
+        glyph[i].SetOpacity(0);
+    }
+    whisper.SetOpacity(0);
+}
+Plymouth.SetDisplayNormalFunction(display_normal_callback);

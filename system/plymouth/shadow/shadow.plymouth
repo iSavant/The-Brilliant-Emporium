@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Shadow
+Description=The rune sigil of the Spell
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/shadow
+ScriptFile=/usr/share/plymouth/themes/shadow/shadow.script

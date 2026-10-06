@@ -1,0 +1,98 @@
+.theme-dark {
+    --background-primary: #060708;
+    --background-primary-alt: #101316;
+    --background-secondary: #101316;
+    --background-secondary-alt: #1B2124;
+    --background-modifier-border: #343B40;
+    --background-modifier-border-hover: #464D52;
+    --background-modifier-border-focus: #BAB7B6;
+    --background-modifier-hover: rgba(186, 183, 182, 0.06);
+    --background-modifier-active-hover: rgba(186, 183, 182, 0.12);
+    --background-modifier-form-field: #1B2124;
+
+    --text-normal: #D8D1D3;
+    --text-muted: #8E8A8C;
+    --text-faint: #66676B;
+    --text-accent: #BAB7B6;
+    --text-accent-hover: #D8D1D3;
+    --text-on-accent: #060708;
+    --text-selection: rgba(186, 183, 182, 0.25);
+    --text-highlight-bg: rgba(204, 30, 43, 0.25);
+
+    --interactive-accent: #BAB7B6;
+    --interactive-accent-hover: #D8D1D3;
+    --interactive-normal: #1B2124;
+    --interactive-hover: #343B40;
+    --color-accent: #BAB7B6;
+
+    --titlebar-background: #060708;
+    --titlebar-background-focused: #060708;
+    --tab-container-background: #060708;
+    --ribbon-background: #060708;
+
+    --link-color: #BAB7B6;
+    --link-color-hover: #D8D1D3;
+    --link-external-color: #8FAAB3;
+    --link-unresolved-color: #66676B;
+    --tag-color: #8E8A8C;
+    --tag-background: rgba(52, 59, 64, 0.5);
+    --tag-background-hover: rgba(52, 59, 64, 0.8);
+
+    --code-background: #101316;
+    --code-normal: #D8D1D3;
+    --code-comment: #66676B;
+    --code-keyword: #7F9BB0;
+    --code-function: #9AABB7;
+    --code-string: #A07F8C;
+    --code-value: #BAB7B6;
+    --code-property: #7D8F9C;
+    --code-tag: #7F9BB0;
+    --code-operator: #8E8A8C;
+    --code-punctuation: #8E8A8C;
+    --code-important: #CC1E2B;
+
+    --blockquote-border-color: #BAB7B6;
+    --checkbox-color: #BAB7B6;
+    --checkbox-border-color: #464D52;
+    --hr-color: #343B40;
+
+    --graph-node: #8E8A8C;
+    --graph-node-focused: #D8D1D3;
+    --graph-node-tag: #66676B;
+    --graph-node-attachment: #464D52;
+    --graph-node-unresolved: #343B40;
+    --graph-line: #343B40;
+
+    --h1-color: #CC1E2B;
+    --h2-color: #8F1E25;
+    --h3-color: #D8D1D3;
+    --h4-color: #BAB7B6;
+    --h5-color: #8E8A8C;
+    --h6-color: #66676B;
+
+    --font-interface-theme: "Roboto Mono";
+    --font-text-theme: "Roboto Mono";
+    --font-monospace-theme: "IosevkaTerm Nerd Font";
+}
+
+.theme-dark :is(h1, h2, .HyperMD-header-1, .HyperMD-header-2, .inline-title) {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+}
+
+.theme-dark :is(h3, h4, h5, h6, .HyperMD-header-3, .HyperMD-header-4, .HyperMD-header-5, .HyperMD-header-6) {
+    font-family: "Cinzel Decorative", serif;
+    letter-spacing: 0.04em;
+}
+
+.theme-dark blockquote,
+.theme-dark .HyperMD-quote {
+    font-family: "Highcrest - Personal use", serif;
+    text-transform: lowercase;
+    font-size: 1.15em;
+}
+
+.theme-dark ::selection {
+    background: rgba(186, 183, 182, 0.25);
+}

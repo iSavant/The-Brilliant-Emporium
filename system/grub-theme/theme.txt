@@ -1,0 +1,44 @@
+title-text: ""
+desktop-image: "background.png"
+desktop-image-scale-method: "stretch"
+desktop-color: "#060708"
+terminal-font: "Roboto Mono Regular 18"
+
++ label {
+    left = 68%
+    top = 16%
+    width = 32%
+    height = 60
+    text = "Into the Dream Realm"
+    font = "Cinzel Decorative Regular 44"
+    color = "#D8D1D3"
+}
+
++ label {
+    left = 68%
+    top = 22%
+    width = 30%
+    height = 40
+    text = "falling asleep"
+    font = "Highcrest - Personal use Regular 26"
+    color = "#8A616D"
+}
+
++ boot_menu {
+    left = 67%
+    top = 30%
+    width = 30%
+    height = 40%
+    item_font = "Shadow Runes Regular 30"
+    selected_item_font = "Cinzel Decorative Regular 24"
+    item_color = "#8E8A8C"
+    selected_item_color = "#D8D1D3"
+    item_height = 56
+    item_padding = 20
+    item_spacing = 8
+    icon_width = 0
+    icon_height = 0
+    item_icon_space = 0
+    selected_item_pixmap_style = "select_*.png"
+    scrollbar = false
+}
