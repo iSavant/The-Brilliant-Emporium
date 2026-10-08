@@ -99,7 +99,7 @@ Options:
 
 ## Credits
 
-- **Inspiration:** [Tsugumori](https://github.com/Aleph1-9012) by Aleph1-9012
+- **Inspiration:** [Tsugumori](https://github.com/Aleph1-9012) by Aleph1-9012 & 43PR's dots (https://github.com/43PR/dotfiles)
 - **Theme:** *Shadow Slave* by Guiltythree
 - **Fonts:** Cinzel Decorative by Natanael Gama, Noto Sans Runic by the Noto Project
   (both SIL Open Font License)
