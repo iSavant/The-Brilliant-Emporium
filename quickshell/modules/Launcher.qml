@@ -320,7 +320,7 @@ PanelWindow {
 
             Rectangle {
                 anchors.fill: parent
-                radius: 10
+                radius: 0
                 color: Theme.night
                 opacity: 0.42
             }
