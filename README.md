@@ -11,6 +11,8 @@
 
 
 
+https://github.com/user-attachments/assets/03defd8a-263b-430f-9c54-7678054819ac
+
 
 
 </div>
@@ -97,7 +99,7 @@ Options:
 
 ## Credits
 
-- **Inspiration:** [Tsugumori](https://github.com/Aleph1-9012) by Aleph1-9012
+- **Inspiration:** [Tsugumori](https://github.com/Aleph1-9012) by Aleph1-9012 & 43PR's dots (https://github.com/43PR/dotfiles)
 - **Theme:** *Shadow Slave* by Guiltythree
 - **Fonts:** Cinzel Decorative by Natanael Gama, Noto Sans Runic by the Noto Project
   (both SIL Open Font License)
