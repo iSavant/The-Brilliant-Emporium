@@ -1,0 +1,83 @@
+/**
+ * @name Shadow Slave
+ * @author Queen
+ * @description Night, steel and soulflame.
+ * @version 1.0
+ */
+
+:root, .theme-dark, .theme-darker, .theme-midnight, .visual-refresh {
+    --ss-night: #060708;
+    --ss-abyss: #101316;
+    --ss-shade: #1B2124;
+    --ss-steel: #343B40;
+    --ss-slate: #464D52;
+    --ss-ember: #66676B;
+    --ss-mist: #8E8A8C;
+    --ss-soul: #BAB7B6;
+    --ss-text: #D8D1D3;
+    --ss-rose: #A07F8C;
+    --ss-crit: #8F1E25;
+    --ss-crim: #CC1E2B;
+
+    --background-base-lowest: var(--ss-night);
+    --background-base-lower: var(--ss-night);
+    --background-base-low: var(--ss-abyss);
+    --background-surface-high: var(--ss-abyss);
+    --background-surface-higher: var(--ss-shade);
+    --background-surface-highest: var(--ss-shade);
+    --background-mod-subtle: rgba(186, 183, 182, 0.06);
+    --background-mod-normal: rgba(186, 183, 182, 0.10);
+    --background-mod-strong: rgba(186, 183, 182, 0.16);
+    --chat-background-default: var(--ss-night);
+    --input-background-default: var(--ss-shade);
+    --modal-background: var(--ss-abyss);
+
+    --background-primary: var(--ss-night);
+    --background-secondary: var(--ss-abyss);
+    --background-secondary-alt: var(--ss-abyss);
+    --background-tertiary: var(--ss-night);
+    --background-floating: var(--ss-abyss);
+    --background-accent: var(--ss-steel);
+    --background-modifier-hover: rgba(186, 183, 182, 0.06);
+    --background-modifier-active: rgba(186, 183, 182, 0.10);
+    --background-modifier-selected: rgba(186, 183, 182, 0.14);
+    --channeltextarea-background: var(--ss-shade);
+
+    --text-default: var(--ss-text);
+    --text-normal: var(--ss-text);
+    --text-strong: #E4DFE1;
+    --text-muted: var(--ss-mist);
+    --text-subtle: var(--ss-mist);
+    --text-link: var(--ss-soul);
+    --header-primary: var(--ss-text);
+    --header-secondary: var(--ss-mist);
+    --channels-default: var(--ss-mist);
+    --interactive-normal: var(--ss-mist);
+    --interactive-hover: var(--ss-text);
+    --interactive-active: var(--ss-soul);
+    --interactive-muted: var(--ss-ember);
+
+    --border-subtle: var(--ss-shade);
+    --border-normal: var(--ss-steel);
+    --border-strong: var(--ss-slate);
+
+    --brand-500: var(--ss-steel);
+    --brand-560: var(--ss-slate);
+    --button-filled-brand-background: var(--ss-steel);
+    --button-filled-brand-background-hover: var(--ss-slate);
+    --button-filled-brand-text: var(--ss-text);
+    --button-danger-background: var(--ss-crit);
+    --status-danger: var(--ss-crim);
+    --text-danger: var(--ss-crim);
+    --mention-foreground: var(--ss-soul);
+    --mention-background: rgba(186, 183, 182, 0.12);
+    --info-warning-foreground: var(--ss-rose);
+
+    --scrollbar-thin-thumb: var(--ss-steel);
+    --scrollbar-auto-thumb: var(--ss-steel);
+    --scrollbar-auto-track: transparent;
+}
+
+::selection {
+    background: rgba(186, 183, 182, 0.30);
+}

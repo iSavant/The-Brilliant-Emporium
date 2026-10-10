@@ -1,0 +1,37 @@
+format = "$directory$git_branch$git_status$cmd_duration$line_break$character"
+add_newline = true
+palette = "shadow"
+
+[palettes.shadow]
+night = "#060708"
+steel = "#343B40"
+mist = "#8E8A8C"
+soulflame = "#BAB7B6"
+text = "#D8D1D3"
+rose = "#A07F8C"
+crimson = "#CC1E2B"
+
+[directory]
+style = "bold soulflame"
+truncation_length = 3
+truncate_to_repo = true
+read_only = " ᛉ"
+read_only_style = "rose"
+
+[git_branch]
+symbol = "ᛒ "
+style = "mist"
+format = "[$symbol$branch]($style) "
+
+[git_status]
+style = "rose"
+format = "([$all_status$ahead_behind]($style) )"
+
+[cmd_duration]
+min_time = 2000
+style = "mist"
+format = "[⧗ $duration]($style)"
+
+[character]
+success_symbol = "[ᛟ](soulflame)"
+error_symbol = "[ᛟ](crimson)"
